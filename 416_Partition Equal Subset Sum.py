@@ -12,7 +12,7 @@ def partition(nums,sum,n,mn_sum):
             if j < nums[i-1]:
                 t[i][j]=t[i-1][j]
             if(j>=nums[i-1]):
-                t[i][j]=t[i-1][j]or t[i-1][j-nums[i-1]]
+                t[i][j]=t[i-1][j] or t[i-1][j-nums[i-1]]
     
     
     return t[n][sum]
